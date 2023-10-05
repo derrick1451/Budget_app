@@ -1,0 +1,18 @@
+<div class= 'container'>
+<div class='form-header'>
+<%= link_to root_path do %>
+  <%= image_tag "back_arrow.svg" %>
+<% end %>
+<p>total amount:    $<%=@group.toal_amount%></p>
+</div>
+<h1>Transactions</h1>
+<div class='cat-container'>
+<%@payments.each do |transaction|%>
+<div class='category'>
+<p><%=transaction.name%></p>
+<p>$<%=transaction.amount%></p>
+</div>
+<%end%>
+</div>
+<%= link_to 'Add new transaction',new_group_payment_path(@group),class:'catt-btn'%>
+</div>
