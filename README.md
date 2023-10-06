@@ -73,13 +73,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo]()
+[Live Demo](https://budget-app-3k93.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Project Walkthrough <a name="Presentation"></a>
 
-[Presentation]()
+[Presentation](https://www.loom.com/share/b11ec0b3b2264373a76fd655a28823d0?sid=a3c5dc3e-db4c-4dbf-bad2-638fe832fdc1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
