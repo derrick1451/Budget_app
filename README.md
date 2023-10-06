@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<h1><b>Budget_app</b></h1>
+<h1><b>Budget-app</b></h1>
 
 </div>
 
