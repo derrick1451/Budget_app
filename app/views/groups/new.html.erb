@@ -13,6 +13,7 @@
   <%= f.text_field :name, required: true,placeholder:'enter a name' %>
 </div>
 <div class='field'>
+<%= f.label :icon %><br>
  <%= f.select :icon, options_for_select([
         ['Select an icon', ''],
         ['Shopping', 'shopping.png'],
