@@ -1,4 +1,5 @@
 class Group < ApplicationRecord
+  #  update validations
   belongs_to :author, class_name: 'User'
   has_many :group_payments
   has_many :payments, through: :group_payments
