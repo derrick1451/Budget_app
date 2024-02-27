@@ -1,0 +1,25 @@
+<section>
+<header class='form-header'>
+<%= link_to group_payments_path(@group) do %>
+  <%= image_tag "back_arrow.svg" %>
+<% end %>
+<h2>Create New Transactions</h2>
+</header>
+<div class='form-container'>
+<%= form_with model: @expense, url: group_payments_path(@group), method: :post, local: true, scope: :expense do |f| %>
+<div class='form'>
+  <div class='field'>
+  <%= f.label :name %><br>
+  <%= f.text_field :name, required: true,placeholder:'enter a name' %>
+</div>
+<div class='field'>
+ <%= f.label :amount %><br>
+  <%= f.number_field :amount, required: true %>
+</div>
+<div class="submit-button">
+<%= f.submit "Save transaction" ,class:'catt-btn'%>
+</div>
+</div>
+<% end %>
+</div>
+</section>
