@@ -1,0 +1,29 @@
+<section>
+<header class='form-header'>
+<%= link_to root_path do %>
+  <%= image_tag "back_arrow.svg" %>
+<% end %>
+<h2>Create New Category</h2>
+</header>
+<div class='form-container'>
+<%= form_with model: @group, url: groups_path, method: :post, local: true, scope: :group do |f| %>
+<div class='form'>
+  <div class='field'>
+  <%= f.label :name %><br>
+  <%= f.text_field :name, required: true,placeholder:'enter a name' %>
+</div>
+<div class='field'>
+<%= f.label :icon %><br>
+ <%= f.select :icon, options_for_select([
+        ['Select an icon', ''],
+        ['Shopping', 'shopping.png'],
+        ['Grocery', 'grocery.png']
+      ], selected: @group.icon), {}, class: 'field-select' %>
+</div>
+<div class='submit-button'>
+<%= f.submit "Create category",class:'catt-btn' %>
+</div>
+</div>
+<% end %>
+</div>
+</section>
